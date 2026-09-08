@@ -13,6 +13,7 @@ public class Hooks {
 
     @Before
     public void setUp() {
+
         String browser = System.getProperty("browser", ConfigReader.getProperty("browser"));
         boolean isRemote = Boolean.parseBoolean(System.getProperty("isRemote", ConfigReader.getProperty("isRemote")));
         driver = DriverFactory.getDriver(browser, isRemote);

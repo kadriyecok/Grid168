@@ -9,7 +9,7 @@ public class googleStepDefinitions {
     WebDriver driver = Hooks.driver;
 
     @Given("Kullanici Url'e gider")
-    public void kullanici_url_e_gider() {
+    public void kullanici_url_e_gider(){
         driver.get("https://www.google.com");
     }
     @Given("Kullanici Url'i dogrular")
@@ -21,9 +21,8 @@ public class googleStepDefinitions {
     }
     @Given("Kullanici sayfayi kapatir")
     public void kullanici_sayfayi_kapatir() {
+
         // bu islem default olarak HOOKS class'i tarafindan gerceklestiriliyor
     }
-
-
 
 }
